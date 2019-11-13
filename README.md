@@ -5,7 +5,7 @@ Rook automates the creation of AWS p3 instances for use in GPU-based password cr
 Start to finish, execution of Rook takes between 3m50 seconds and 4m15 seconds (not including cracking time).
 
 None of this would be possible to the great work done by the [Hashcat team](https://github.com/hashcat/hashcat).
-Ideas for the automation and usage of AWS for password cracking came from [1](),[2](),[3]().
+Ideas for the automation and usage of AWS for password cracking came from: [1](https://hackernoon.com/20-hours-18-and-11-million-passwords-cracked-c4513f61fdb1),[2](https://medium.com/@lordsaibat/cracking-passwords-with-terraform-and-aws-3685cc918721),[3](https://medium.com/@iraklis/running-hashcat-v4-0-0-in-amazons-aws-new-p3-16xlarge-instance-e8fab4541e9b).
 
 
 ## Index

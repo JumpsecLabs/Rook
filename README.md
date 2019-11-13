@@ -1,5 +1,4 @@
 # Rook
-## Introduction
 Rook automates the creation of AWS p3 instances for use in GPU-based password cracking. AWS p3 instances use the NVIDIA V100 GPUs, which provide the best password cracking H/s per GPU we've found. Rook is a Python wrapper around a Terraform base, automating the creation, mounting of wordlists and Hashcat installation, and will start the cracking for you.
 
 Start to finish, execution of Rook takes between 3m50 seconds and 4m15 seconds (not including cracking time).
@@ -24,7 +23,7 @@ MegaHash/Second statistics for hashtypes we encounter on internal tests - for a 
 | NetNTLMv2  | 3805.4 MH/s  |
 | Kerberos Type 5 (krbtgt)  | 999.4 MH/s  |
 
-A full benchmark on the p3.2xlarge instance is available [here](stats.md).
+A full benchmark on the p3.2xlarge instance is available [here](stats.md). Stats more or less scale linearly on the p3.8xlarge and p3.16xlarge - working on getting stats for these.
 
 The stats for megahashes per second are based off of pure-brute force rather than dictionaries - in reality, the stats for dictionary smart brute forcing are significantly lower due to I/O bottlenecks reading from disk into the GPU's memory.
 
